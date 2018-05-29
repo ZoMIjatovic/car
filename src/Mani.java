@@ -42,6 +42,17 @@ public class Mani {
         audi.printMainAttraibutes();
         audi.travel(3);
         audi.printMainAttraibutes();
+        audi.getIn();
+        audi.getOut();
+        audi.printMainAttraibutes();
+        audi.getIn();
+        audi.getOut();
+        audi.printMainAttraibutes();
+        audi.getIn();
+        audi.getOut();
+        audi.printMainAttraibutes();
+        audi.getIn();
+        audi.getOut();
     }
 
 }
