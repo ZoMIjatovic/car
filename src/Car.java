@@ -22,7 +22,7 @@ public class Car {
         this.model = "default";
         this.currentFuel = 0;
         this.maxFuel = 100;
-        this.currentPassingers = 1;
+        this.currentPassingers = 2;
         this.maxPassingers = 5;
     }
 
@@ -91,9 +91,9 @@ public class Car {
     }
 
     public void getIn() {
-        if (this.currentPassingers < this.currentPassingers) {
+        if (this.currentPassingers < this.maxPassingers) {
             this.currentPassingers = this.currentPassingers + 1;
-            System.out.println("Broj putnika se povecao za 1" + this.currentPassingers);
+            System.out.println("Broj putnika se povecao za " + this.currentPassingers);
         } else {
             System.out.println("U automobilu nema mesta ");
         }
@@ -103,21 +103,33 @@ public class Car {
     public void getOut() {
         if (this.currentPassingers > 0) {
             this.currentPassingers = this.currentPassingers - 1;
-            System.out.println("NIyasao jedan putnik, trenutno putnika " + this.currentPassingers);
+            System.out.println("Izasa jedan putnik, trenutno putnika " + this.currentPassingers);
         } else {
             System.out.println("U automobili vise nema putnika ");
         }
     }
-    
-    public void changeMaxPassingers (int newMax) {
-    this.maxPassingers = newMax;
-    }
-    
-    
-    public void getIn (int numberOgPassingers) {
-    }
-    
-    public void getOut (int numberOfPassingers) {
-    }
-}
 
+    public void changeMaxPassingers(int newMax) {
+        this.maxPassingers = newMax;
+    }
+
+    public void getIn(int numberOfPassingers) {
+        if (numberOfPassingers < this.maxPassingers) {
+            this.currentPassingers = this.currentPassingers + numberOfPassingers;
+            System.out.println("Broj putnika se povecao za " + this.currentPassingers);
+        } else {
+            System.out.println("U automobilu nema mesta ");
+        }
+    }
+
+
+    public void getOut(int numberOfPassingers) {
+        if (numberOfPassingers <= this.maxPassingers - 0) {
+            this.currentPassingers = this.currentPassingers - numberOfPassingers;
+            System.out.println("Trenutno putnika " + this.currentPassingers);
+        } else {
+            System.out.println("U automobili vise nema putnika ");
+        
+}
+}
+}

@@ -53,6 +53,16 @@ public class Mani {
         audi.printMainAttraibutes();
         audi.getIn();
         audi.getOut();
-    }
-
+    
+        Car testAuto = new Car();
+        testAuto.printMainAttraibutes();
+        testAuto.getIn(1);
+        testAuto.getOut(1);
+        testAuto.printMainAttraibutes();
+        testAuto.getIn(2);
+        testAuto.getOut(3);
+        testAuto.printMainAttraibutes();
+        testAuto.getIn(3);
+        testAuto.getOut(2);
+}
 }
